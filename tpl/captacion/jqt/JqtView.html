@@ -1,0 +1,10 @@
+
+<div data-role="content">
+    <ul data-role="listview" data-autodividers="true" data-filter="true" data-filter-placeholder="Buscar x Nombre" data-inset="true" >
+        <% _.each(employees, function(employee) { %>
+            <li >
+                <a href="#form/contacto/<%= employee.id %>"><%= employee.name %> </a>
+            </li>
+        <% }); %>
+    </ul>
+</div><!-- /content -->

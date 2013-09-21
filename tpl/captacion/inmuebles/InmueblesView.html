@@ -1,0 +1,325 @@
+<div id="main-content" class="main-content container-fluid">
+            <div class="row-fluid page-head">
+                <h2 class="page-title"><i class="fontello-icon-picture-3"></i> Image gallery <small>demonstration of  possible compilation</small></h2>
+                <p class="pagedesc">Automatic generation of thumbnails according to the setting, paging, Viewing, Editing - Take advantage of plugins. </p>
+            </div>
+            <!-- // page head -->
+            
+            <div id="page-content" class="page-content">
+                
+                <!-- /navbar -->
+                <section>
+                    <div class="row-fluid">
+                        <div class="span5 grider-item">
+                            <h4 class="simple-header"><a class="btn btn-green pull-right">edit gallery</a><i class="fontello-icon-edit"></i> Edit item</h4>
+                            <div class="well well-nice">
+                                <div id="previewImage" class="preview-image"> <img src="assets/img/demo/gallery/gall_01/image_01.jpg"> </div>
+                                <form id="formNextAccountSettings" class="form-horizontal form-condensed form-dark label-left no-margin-bootom">
+                                    <fieldset>
+                                        <ul class="form-list form-datapreview">
+                                            <li class="control-group">
+                                                <label for="fileName" class="control-label">File name</label>
+                                                <div class="controls"> <span>image_125487954512_1254.jpg</span> </div>
+                                            </li>
+                                            <!-- // form item -->
+                                            
+                                            <li class="control-group">
+                                                <label for="fileType" class="control-label">File type</label>
+                                                <div class="controls"> <span>image - .jpg</span> </div>
+                                            </li>
+                                            <!-- // form item -->
+                                            
+                                            <li class="control-group">
+                                                <label for="fileDateUpload" class="control-label">Upload date</label>
+                                                <div class="controls"> <span>December 21, 2012</span> </div>
+                                            </li>
+                                            <!-- // form item -->
+                                            
+                                            <li class="control-group">
+                                                <label for="fileDimensions" class="control-label">Dimensions</label>
+                                                <div class="controls"> <span>1200 x 980</span> </div>
+                                            </li>
+                                            <!-- // form item -->
+                                        </ul>
+                                        <hr class="margin-0x">
+                                    </fieldset>
+                                    <!-- // fieldset Input -->
+                                    
+                                    <fieldset>
+                                        <ul class="form-list">
+                                            <li class="control-group">
+                                                <label for="fileTile" class="control-label">Image Title</label>
+                                                <div class="controls">
+                                                    <input id="fileTile" class="input-block-level" type="text" name="fileTile" value="Image 01">
+                                                </div>
+                                            </li>
+                                            <!-- // form item -->
+                                            
+                                            <li class="control-group">
+                                                <label for="fileAltText" class="control-label">Alternate Text</label>
+                                                <div class="controls">
+                                                    <input id="fileAltText" class="input-block-level" type="text" name="fileAltText" value="Image 01">
+                                                </div>
+                                            </li>
+                                            <!-- // form item -->
+                                            
+                                            <li class="control-group">
+                                                <label for="fileCaption" class="control-label">Caption</label>
+                                                <div class="controls">
+                                                    <input id="fileCaption" class="input-block-level" type="text" name="fileCaption" value="Wallpaper image 01">
+                                                </div>
+                                            </li>
+                                            <!-- // form item -->
+                                            
+                                            <li class="control-group">
+                                                <label for="fileDescript" class="control-label">Image Description</label>
+                                                <div class="controls">
+                                                    <textarea id="fileDescript" class="input-block-level auto" rows="3" placeholder="Enter text ..." style="overflow: hidden;">Lorem ipsum dolor sit amet consectetuer lacinia pede</textarea>
+                                                <div style="position: absolute; display: none; word-wrap: break-word; white-space: pre-wrap; border-color: rgb(168, 171, 186) rgb(181, 183, 197) rgb(197, 199, 210); border-style: solid; border-width: 1px; font-weight: 400; width: 278px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 20px; font-size: 14px; padding: 4px 6px;">Lorem ipsum dolor sit amet consectetuer lacinia pede&nbsp;</div></div>
+                                            </li>
+                                            <!-- // form item -->
+                                            
+                                            <li class="control-group">
+                                                <label for="fileToGallery" class="control-label">Gallery</label>
+                                                <div class="controls">
+                                                    <select id="fileToGallery" class="selectpicker input-medium" data-style="btn-info" name="fileToGallery" style="display: none;">
+                                                        <option value="1">Gallery 01</option>
+                                                        <option value="2">Gallery 02</option>
+                                                        <option value="3">Gallery 03</option>
+                                                    </select><div class="btn-group bootstrap-select input-medium"><button class="btn dropdown-toggle clearfix btn-info" data-toggle="dropdown" id="fileToGallery"><span class="filter-option pull-left">Gallery 01</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu" role="menu"><ul style="max-height: none; overflow-y: auto;"><li rel="0"><a tabindex="-1" href="#">Gallery 01</a></li><li rel="1"><a tabindex="-1" href="#">Gallery 02</a></li><li rel="2"><a tabindex="-1" href="#">Gallery 03</a></li></ul></div></div>
+                                                </div>
+                                            </li>
+                                            <!-- // form item -->
+                                            
+                                            <li class="control-group">
+                                                <label for="fileTag" class="control-label">Tag for item</label>
+                                                <div class="controls">
+                                                    <div class="select2-container select2-container-multi" id="s2id_fileTag" style="width: 100%">    <ul class="select2-choices">  <li class="select2-search-field">    <input type="text" autocomplete="off" class="select2-input select2-default" style="width: 279px;">  </li></ul><div class="select2-drop select2-drop-multi" style="display:none;">   <ul class="select2-results">   </ul></div></div><input id="fileTag" class="" type="text" name="fileTag" style="display: none;">
+                                                </div>
+                                            </li>
+                                            <!-- // form item -->
+                                            
+                                        </ul>
+                                    </fieldset>
+                                    <!-- // fieldset Input -->
+                                    
+                                    <div class="form-actions no-margin-bootom">
+                                        <button type="submit" class="btn btn-green">Save data</button>
+                                        <button class="btn cancel">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- // column -->
+                        
+                        <div class="span7 grider-item gallery-well gallery-small">
+                            <h4 class="simple-header">
+                                <form class="form-inline pull-right margin-00" action="">
+                                    <label>items per page: </label>
+                                    <select id="showItem" class="selectpicker" data-style="btn-boo" style="display: none;">
+                                        <option>12</option>
+                                        <option>16</option>
+                                        <option>20</option>
+                                        <option>24</option>
+                                        <option>28</option>
+                                    </select><div class="btn-group bootstrap-select"><button class="btn dropdown-toggle clearfix btn-boo" data-toggle="dropdown" id="showItem"><span class="filter-option pull-left">12</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu" role="menu"><ul style="max-height: 78px; overflow-y: scroll;"><li rel="0"><a tabindex="-1" href="#">12</a></li><li rel="1"><a tabindex="-1" href="#">16</a></li><li rel="2"><a tabindex="-1" href="#">20</a></li><li rel="3"><a tabindex="-1" href="#">24</a></li><li rel="4"><a tabindex="-1" href="#">28</a></li></ul></div></div>
+                                </form>
+                                <i class="fontello-icon-picture"></i> Gallery name</h4>
+                            
+                            <!-- class for thumbnail size - square75 square100 square150 square200 square260 horizontal75 horizontal100 horizontal200 vertical75 vertical100 vertical200 -->
+                            <ul id="gallery" class="thumbnails thumbnails-inline horizontal200" data-toggle="modal-gallery" data-target="#modal-gallery" data-selector="a[rel=gallery]" style="min-height: 708px;">
+                                <li class="thumbnail" style="display: block; opacity: 1;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_01.jpg" title="image 01" rel="gallery" style=""><img style="position: relative; width: 222.22222222222223px; height: 125px; top: 0px; left: -11.111111111111114px;" title="image 01" src="assets/img/demo/gallery/gall_01/image_01.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px;">image 01</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_01.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_01.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: block; opacity: 1;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_02.jpg" title="image 02" rel="gallery" style=""><img style="position: relative; width: 200px; height: 150px; top: -12.5px; left: 0px;" title="image 02" src="assets/img/demo/gallery/gall_01/image_02.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -27px; width: 200px;">image 02</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_02.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_02.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: block; opacity: 1;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_03.jpg" title="image 03" rel="gallery" style=""><img style="position: relative; width: 222.22222222222223px; height: 125px; top: 0px; left: -11.111111111111114px;" title="image 03" src="assets/img/demo/gallery/gall_01/image_03.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px;">image 03</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_03.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_03.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: block; opacity: 1;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_04.jpg" title="image 04" rel="gallery" style=""><img style="position: relative; width: 222.22222222222223px; height: 125px; top: 0px; left: -11.111111111111114px;" title="image 04" src="assets/img/demo/gallery/gall_01/image_04.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px;">image 04</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_04.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_04.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: block; opacity: 1;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_05.jpg" title="image 05" rel="gallery" style=""><img style="position: relative; width: 222.22222222222223px; height: 125px; top: 0px; left: -11.111111111111114px;" title="image 05" src="assets/img/demo/gallery/gall_01/image_05.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px;">image 05</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_05.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_05.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: block; opacity: 1;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_06.jpg" title="image 06" rel="gallery" style=""><img style="position: relative; width: 200px; height: 150px; top: -12.5px; left: 0px;" title="image 06" src="assets/img/demo/gallery/gall_01/image_06.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -27px; width: 200px;">image 06</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_06.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_06.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: block; opacity: 1;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_07.jpg" title="image 07" rel="gallery" style=""><img style="position: relative; width: 200px; height: 150px; top: -12.5px; left: 0px;" title="image 07" src="assets/img/demo/gallery/gall_01/image_07.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -27px; width: 200px;">image 07</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_07.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_07.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: block; opacity: 1;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_08.jpg" title="image 08" rel="gallery" style=""><img style="position: relative; width: 200px; height: 160px; top: -17.5px; left: 0px;" title="image 08" src="assets/img/demo/gallery/gall_01/image_08.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -37px; width: 200px;">image 08</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_08.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_08.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: block; opacity: 1;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_09.jpg" title="image 09" rel="gallery" style=""><img style="position: relative; width: 200px; height: 125px; top: 0px; left: 0px;" title="image 09" src="assets/img/demo/gallery/gall_01/image_09.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px; width: 200px;">image 09</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_09.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_09.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: block; opacity: 1;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_10.jpg" title="image 10" rel="gallery" style=""><img style="position: relative; width: 222.22222222222223px; height: 125px; top: 0px; left: -11.111111111111114px;" title="image 10" src="assets/img/demo/gallery/gall_01/image_10.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px;">image 10</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_10.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_10.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: block; opacity: 1;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_11.jpg" title="image 11" rel="gallery" style=""><img style="position: relative; width: 222.22222222222223px; height: 125px; top: 0px; left: -11.111111111111114px;" title="image 11" src="assets/img/demo/gallery/gall_01/image_11.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px;">image 11</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_11.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_11.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: block; opacity: 1;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_12.jpg" title="image 12" rel="gallery" style=""><img style="position: relative; width: 222.22222222222223px; height: 125px; top: 0px; left: -11.111111111111114px;" title="image 12" src="assets/img/demo/gallery/gall_01/image_12.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px;">image 12</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_12.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_12.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_13.jpg" title="image 13" rel="gallery" style=""><img style="position: relative; width: 200px; height: 125px; top: 0px; left: 0px;" title="image 13" src="assets/img/demo/gallery/gall_01/image_13.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px; width: 200px;">image 13</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_13.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_13.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_14.jpg" title="image 14" rel="gallery" style=""><img style="position: relative; width: 200px; height: 150px; top: -12.5px; left: 0px;" title="image 14" src="assets/img/demo/gallery/gall_01/image_14.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -27px; width: 200px;">image 14</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_14.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_14.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_15.jpg" title="image 15" rel="gallery" style=""><img style="position: relative; width: 200px; height: 125px; top: 0px; left: 0px;" title="image 15" src="assets/img/demo/gallery/gall_01/image_15.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px; width: 200px;">image 15</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_15.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_15.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_16.jpg" title="image 16" rel="gallery" style=""><img style="position: relative; width: 222.22222222222223px; height: 125px; top: 0px; left: -11.111111111111114px;" title="image 16" src="assets/img/demo/gallery/gall_01/image_16.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px;">image 16</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_16.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_16.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_17.jpg" title="image 17" rel="gallery" style=""><img style="position: relative; width: 200px; height: 125px; top: 0px; left: 0px;" title="image 17" src="assets/img/demo/gallery/gall_01/image_17.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px; width: 200px;">image 17</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_17.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_17.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_18.jpg" title="image 18" rel="gallery" style=""><img style="position: relative; width: 222.22222222222223px; height: 125px; top: 0px; left: -11.111111111111114px;" title="image 18" src="assets/img/demo/gallery/gall_01/image_18.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px;">image 18</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_18.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_18.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_19.jpg" title="image 19" rel="gallery" style=""><img style="position: relative; width: 200px; height: 125px; top: 0px; left: 0px;" title="image 19" src="assets/img/demo/gallery/gall_01/image_19.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px; width: 200px;">image 19</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_19.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_19.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_20.jpg" title="image 20" rel="gallery" style=""><img style="position: relative; width: 200px; height: 150px; top: -12.5px; left: 0px;" title="image 20" src="assets/img/demo/gallery/gall_01/image_20.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -27px; width: 200px;">image 20</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_20.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_20.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_21.jpg" title="image 21" rel="gallery" style=""><img style="position: relative; width: 200px; height: 160px; top: -17.5px; left: 0px;" title="image 21" src="assets/img/demo/gallery/gall_01/image_21.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -37px; width: 200px;">image 21</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_21.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_21.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_22.jpg" title="image 22" rel="gallery" style=""><img style="position: relative; width: 222.22222222222223px; height: 125px; top: 0px; left: -11.111111111111114px;" title="image 22" src="assets/img/demo/gallery/gall_01/image_22.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px;">image 22</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_22.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_22.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_23.jpg" title="image 23" rel="gallery" style=""><img style="position: relative; width: 200px; height: 160px; top: -17.5px; left: 0px;" title="image 23" src="assets/img/demo/gallery/gall_01/image_23.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -37px; width: 200px;">image 23</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_23.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_23.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_24.jpg" title="image 24" rel="gallery" style=""><img style="position: relative; width: 200px; height: 125px; top: 0px; left: 0px;" title="image 24" src="assets/img/demo/gallery/gall_01/image_24.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px; width: 200px;">image 24</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_24.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_24.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_25.jpg" title="image 25" rel="gallery" style=""><img style="position: relative; width: 200px; height: 125px; top: 0px; left: 0px;" title="image 25" src="assets/img/demo/gallery/gall_01/image_25.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px; width: 200px;">image 25</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_25.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_25.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_26.jpg" title="image 26" rel="gallery" style=""><img style="position: relative; width: 200px; height: 125px; top: 0px; left: 0px;" title="image 26" src="assets/img/demo/gallery/gall_01/image_26.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px; width: 200px;">image 26</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_26.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_26.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                                <li class="thumbnail" style="display: none;">
+                                    <div class="nailthumb-container show-loading" style="overflow: hidden; padding: 0px; width: 200px; height: 125px;"> <a href="assets/img/demo/gallery/gall_01/image_27.jpg" title="image 27" rel="gallery" style=""><img style="position: relative; width: 200px; height: 125px; top: 0px; left: 0px;" title="image 27" src="assets/img/demo/gallery/gall_01/image_27.jpg" class="nailthumb-image"></a> <span class="nailthumb-title" style="top: -2px; width: 200px;">image 27</span></div>
+                                    <div class="gall-caption"> <span class="data-icon"> <span class="fontello-icon-eye-1">56</span> <span class="fontello-icon-heart">14</span> </span> <span class="menu-icon"> <a href="assets/img/demo/gallery/gall_01/image_27.jpg" class="btn-glyph edit fontello-icon-edit"></a> <a href="assets/img/demo/gallery/gall_01/image_27.jpg" class="btn-glyph delete fontello-icon-trash-4"></a> </span> </div>
+                                </li>
+                                <!-- // gallery item -->
+                                
+                            </ul>
+                            
+                            <!-- pagination -->
+                            <div class="pagination pagination-boo margin-right10">
+                                <div class="gall-legend pull-left"> 
+                                    <!-- Item oriented legend --> 
+                                    <strong id="legend2">1 - 12 of 27</strong> </div>
+                                <ul class="holder pull-right"><li><a class="jp-previous jp-disabled">previous</a></li><li><a class="jp-current">1</a></li><li><span class="jp-hidden">...</span></li><li><a href="#" class="">2</a></li><li><span class="jp-hidden">...</span></li><li><a>3</a></li><li><a class="jp-next">next</a></li></ul>
+                            </div>
+                        </div>
+                        <!-- // column --> 
+                        
+                    </div>
+                    <!-- // Example row --> 
+                    
+                </section>
+            </div>
+            <!-- // page content --> 
+            
+        </div>
+
+
+        <div id="loader-page" style="display: none;"><img alt="" src="assets/img/loader/loader.gif"></div>
+
+<div class="modal-container"> <!-- You can put your modal definitions here but it is not required --> 
+    
+    <!-- modal-gallery is the modal dialog used for the image gallery -->
+    <div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
+        <div class="modal-header"> <a class="close" data-dismiss="modal"><i class="fontello-icon-cancel-1"></i></a>
+            <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+            <div class="modal-image"></div>
+        </div>
+        <div class="modal-footer"> <a class="btn btn-navi text-gold modal-prev"><i class="fontello-icon-left-open"></i> Previous</a> <a class="btn btn-inverse text-gold btn-glyph modal-play modal-slideshow tip-tc" data-slideshow="5000" title="Play slideshow"> <i class="fontello-icon-play"></i></a> <a class="btn btn-inverse text-gold btn-glyph modal-download tip-tc" target="_blank" title="Downloads this image"> <i class="fontello-icon-download"></i></a> <a class="btn btn-navi text-gold  modal-next">Next image <i class="fontello-icon-right-open"></i></a> </div>
+    </div>
+    <!-- // modal  -->
+    
+</div>

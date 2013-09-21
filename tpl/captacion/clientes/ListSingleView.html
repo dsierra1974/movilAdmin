@@ -1,0 +1,22 @@
+
+    <div class="media-body">
+        <h4 class="media-heading"><i class="fontello-icon-user-4"></i>
+            <a href="javascript:void(0);"><%= nombre %> <%= apellidoPaterno %> <%= apellidoMaterno %></a> <span class="label label-success pull-right">Activo</span></h4>
+        <div class="quick-menu menu-right">
+            <div class="btn-group">
+                <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle"><i class="fontello-icon-cog-4"></i> &nbsp;<span class="caret"></span></button>
+                <ul class="dropdown-menu pull-right">
+                    <li><a href="#full-width2" data-toggle="modal"><i class="icon-pencil"></i><span class="divider-text"></span> Editar</a></li>
+                    <li><a href="#"><i class="icon-remove"></i><span class="divider-text"></span> Rechazar</a></li>
+                    <li><a href="#"><i class="icon-ok"></i><span class="divider-text"></span> Aprobar</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="icon-trash"></i><span class="divider-text"></span> Eliminar</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="data">
+            <li><%= colonia %> <%= calle %> <%= numero %>, <%= estado %>  <%= ciudad %> <%= cp %></li>
+            <li><abbr title="Phone"><i class="fontello-icon-phone opaci75"></i> : </abbr> <strong><%= telefonoMovil %></strong></li>
+            <li><abbr title="Phone"><i class="fontello-icon-mail-4 opaci75"></i> : </abbr> <a href="javascript:void(0);"><%= email %></a></li>
+        </ul>
+    </div>

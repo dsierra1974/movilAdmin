@@ -1,0 +1,14 @@
+<% _.each(employees, function(employee) { %>
+    <div data-role="header" data-theme="a" >
+        <a href="#category?jqt" data-icon="delete">Regresar</a>
+        <h1>Edit Contacto</h1>
+        <a href="#save/contacto/<%= employee.id %>" data-icon="check" data-theme="a">Salvar</a>
+    </div>
+
+    <div data-role="content">
+        <div data-role="fieldcontain">
+                <label for="textinput-disabled">TNombre:</label>
+                <input disabled="disabled" type="text" name="textinput-disabled" id="textinput-disabled" placeholder="Text input" value= "<%= employee.name %>" >
+        </div>
+    </div>
+<% }); %>
