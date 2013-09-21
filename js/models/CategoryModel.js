@@ -6,7 +6,7 @@ define([ "jquery", "backbone" ], function( $, Backbone ) {
 
     // The Model constructor
     var Model = Backbone.Model.extend( {
-        urlRoot: "http://localhost:3000/erp/res.partner"
+        urlRoot: "http://216.224.166.246:3001/erp/res.partner"
 
 
         //initialize: function () {
