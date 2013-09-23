@@ -47,7 +47,7 @@ require([ "jquery", "backbone", "routers/mobileRouter" , "fastClick" ], function
         require( [ "jquerymobile" ], function() {
             // Instantiates a new Backbone.js Mobile Router
 
-            //this.router = new Mobile();
+            this.router = new Mobile();
         });
     //});
 } );
