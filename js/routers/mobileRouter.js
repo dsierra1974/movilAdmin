@@ -2,7 +2,8 @@
 // =============
 
 // Includes file dependencies
-define([ "jquery","backbone", "../models/CategoryModel", "../collections/CategoriesCollection", "../views/CategoryView","../views/jqt", "../views/ContactoView" ], function( $, Backbone, CategoryModel, CategoriesCollection, CategoryView, JqtView  ) {
+//define([ "jquery","backbone", "../models/CategoryModel", "../collections/CategoriesCollection", "../views/CategoryView","../views/jqt", "../views/ContactoView" ], function( $, Backbone, CategoryModel, CategoriesCollection, CategoryView, JqtView  ) {
+define([ "jquery","backbone"], function( $, Backbone ) {
     var CategoryRouter = Backbone.Router.extend( {
         initialize: function() {
             //this.animalsView = new CategoryView( { el: "#animals", collection: new CategoriesCollection( [] , { type: "animals" , query: "type|like|contact" } ) } );
