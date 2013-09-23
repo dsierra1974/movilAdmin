@@ -29,7 +29,7 @@ require.config( {
 require([ "jquery", "backbone", "routers/mobileRouter" , "fastClick" ], function( $, Backbone, Mobile, FastClick) {
 
     window.addEventListener('load', function () {
-        new FastClick(document.body);
+        //new FastClick(document.body);
     }, false);
 
 	$( document ).on( "mobileinit",
@@ -47,7 +47,7 @@ require([ "jquery", "backbone", "routers/mobileRouter" , "fastClick" ], function
         require( [ "jquerymobile" ], function() {
             // Instantiates a new Backbone.js Mobile Router
 
-            this.router = new Mobile();
+            //this.router = new Mobile();
         });
     //});
 } );
