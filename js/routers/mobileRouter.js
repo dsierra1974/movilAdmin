@@ -4,7 +4,9 @@
 // Includes file dependencies
 //define([ "jquery","backbone", "../models/CategoryModel", "../collections/CategoriesCollection", "../views/CategoryView","../views/jqt", "../views/ContactoView" ], function( $, Backbone, CategoryModel, CategoriesCollection, CategoryView, JqtView  ) {
 define([ "jquery","backbone"], function( $, Backbone ) {
-    var CategoryRouter = Backbone.Router.extend( {
+    var CategoryRouter = "";
+
+        /*Backbone.Router.extend( {
         initialize: function() {
             //this.animalsView = new CategoryView( { el: "#animals", collection: new CategoriesCollection( [] , { type: "animals" , query: "type|like|contact" } ) } );
             //this.colorsView = new CategoryView( { el: "#colors", collection: new CategoriesCollection( [] , { type: "colors" , query: "type|like|contact" } ) } );
@@ -12,9 +14,9 @@ define([ "jquery","backbone"], function( $, Backbone ) {
             //this.jqtView = new JqtView( { el: "#jqt", collection: new CategoriesCollection( [] , { type: "res.partner" , query: "type|like|contact" } ) }  );
             //this.contactoView = new ContactoView( { el: "#contacto", collection: new CategoriesCollection( [] , { type: "res.partner" , query: "type|like|contact" } ) }  );
 
-            Backbone.history.start();
+           // Backbone.history.start();
         }
-        /*,routes: {
+        ,routes: {
             "": "home",
             "category?:type": "category",
             "form/:type/:clave": "form",
@@ -69,8 +71,8 @@ define([ "jquery","backbone"], function( $, Backbone ) {
                     $.mobile.changePage( "#jqt", { reverse: false, changeHash: false } );
                 }
             })
-        }*/
-    } );
+        }
+    } );*/
 
     return CategoryRouter;
 } );
