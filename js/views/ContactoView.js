@@ -13,6 +13,17 @@ define([ "jquery", "backbone","models/CategoryModel" , "text!../../tpl/captacion
             return this;
         }
         ,
+        events: {
+            'click .delete': 'deleteArtist'
+        },
+        deleteArtist: function (ev) {
+            this.artist.destroy({
+                success: function () {
+                    console.log('Artist Deleted');
+                    router.navigate('', {trigger:true});
+                }
+            })
+        },
 
         salvar: function (event) {
             var key = $('.search-key').val();

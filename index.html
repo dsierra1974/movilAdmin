@@ -7,17 +7,19 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Mobile Admin</title>
 
-
     <link rel="shortcut icon" href="http://vps-1143999-18436.manage.myhosting.com/mobile/wp-content/themes/duodrawer/images/default/favicon.ico">
     <link rel="stylesheet" id="style-css" href="http://vps-1143999-18436.manage.myhosting.com/mobile/wp-content/themes/duodrawer/style.css?ver=1.0" type="text/css" media="all">
     <link rel="stylesheet" id="framework-style-css-css" href="http://vps-1143999-18436.manage.myhosting.com/mobile/wp-content/themes/duodrawer/styles/framework-style.css?ver=1.0" type="text/css" media="all">
     <link rel="stylesheet" id="framework-css" href="http://vps-1143999-18436.manage.myhosting.com/mobile/wp-content/themes/duodrawer/styles/framework.css?ver=1.0" type="text/css" media="all">
 
-    <link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0-alpha.2.min.css">
-    <script src="js/libs/require.js" data-main="js/mobile"></script>
-    <!--link rel="stylesheet" href="_assets/css/jqm-demos.css"-->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <!--link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0-alpha.2.min.css"-->
+
+
+
+
 </head>
+
+
 <body>
 <!-- preloader starts -->
 <div id="preloader" style="">
@@ -39,25 +41,24 @@
     <a href="mailto:" class="header-mail"></a>
 </div>
 
-<div id="categories" data-role="page" data-title="Categories">
+
+<div data-role="page" class="jqm-demos" data-quicklinks="true">
+    <div data-role="content" class="jqm-content">
+
+
+    </div><!-- /content -->
 </div>
 
-<div id="jqt" data-role="page" data-title="Animals2">
+
+
+<div id="jqt" data-role="page" data-title="Animals2" data-theme="a">
 
 </div>
-<div id="contacto" data-role="page" data-title="Contactos" data-theme = "a">
+
+<div id="contacto" data-role="page" data-title="Animals2" data-theme="a" >
 
 </div>
 
-<div id="animals" data-role="page" data-title="Animals">
-
-</div>
-<div id="colors" data-role="page" data-title="Colors">
-
-</div>
-<div id="vehicles" data-role="page" data-title="Vehicles">
-
-</div>
 
 <!--div class="page-content">
     <div class="content ">
@@ -93,12 +94,12 @@
         <ul class="menu mainMenu">
             <li id="menu-item-157" class="home-nav menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-144 current_page_item menu-item-157"><a href="#"><span class="mainMenuText">Home</span></a></li>
             <li id="menu-item-158" class="home-nav menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-144 current_page_item menu-item-157"><a href="#category?jqt"><span class="mainMenuText">Contactos</span></a></li>
-            <li id="menu-item-159" class="home-nav menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-144 current_page_item menu-item-157"><a href="#category?jqt"><span class="mainMenuText">Exclusivas</span></a></li>
-            <li id="menu-item-160" class="home-nav menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-144 current_page_item menu-item-157"><a href="#category?jqt"><span class="mainMenuText">Agenda</span></a></li>
+            <li id="menu-item-159" class="home-nav menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-144 current_page_item menu-item-157"><a href="#category?jqt1"><span class="mainMenuText">Exclusivas</span></a></li>
+            <li id="menu-item-160" class="home-nav menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-144 current_page_item menu-item-157"><a href="#category?jqt2"><span class="mainMenuText">Agenda</span></a></li>
 
 
-            <li id="menu-item-156" class="blog-nav menu-item menu-item-type-post_type menu-item-object-page menu-item-156"><a href="http://vps-1143999-18436.manage.myhosting.com/mobile/?page_id=8"><span class="mainMenuText">Blog</span></a></li>
-            <li id="menu-item-161" class="mail-nav menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="http://vps-1143999-18436.manage.myhosting.com/mobile/?page_id=25"><span class="mainMenuText">Contact</span></a></li>
+            <li id="menu-item-156" class="blog-nav menu-item menu-item-type-post_type menu-item-object-page menu-item-156"><a href="#category?jqt3"><span class="mainMenuText">Blog</span></a></li>
+            <li id="menu-item-161" class="mail-nav menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="#category?jqt4"><span class="mainMenuText">Contact</span></a></li>
         </ul>
 
         <div class="clear"></div>
@@ -224,6 +225,7 @@
 </div>
 <!-- right sidebar ends -->
 
+<script src="js/libs/require.js" data-main="js/mobile"></script>
 
 <!--script type="text/javascript" src="js/eliminar/jquery.min.js"></script-->
 <script type="text/javascript" src="js/libs/jquery.js"></script>
@@ -241,6 +243,12 @@
 <script type="text/javascript" src="http://vps-1143999-18436.manage.myhosting.com/mobile/wp-content/themes/duodrawer/scripts/custom.js?ver=1.0"></script>
 <script type="text/javascript" src="http://vps-1143999-18436.manage.myhosting.com/mobile/wp-content/themes/duodrawer/scripts/framework.js?ver=1.0"></script>
 <div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div>
+
+
+
+
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0-alpha.2.css">
+<link rel="stylesheet"  href="css/themes/default/mobileAdmin.css">
 
 
 </body>

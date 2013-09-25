@@ -8,6 +8,7 @@ define([ "jquery","backbone","models/CategoryModel" ], function( $, Backbone, Ca
         initialize: function( models, options ) {
             this.types = options.type;
             this.url = "http://168.144.134.243:3000/erp/find/"+ this.types +"?query=" + options.query;
+            //this.url = "http://localhost:3000/erp/find/"+ this.types +"?query=" + options.query;
         },
         // Sets the Collection model property to be a Category Model
         model: CategoryModel
