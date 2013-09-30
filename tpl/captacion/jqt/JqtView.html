@@ -1,12 +1,19 @@
+<div data-role="header" >
+    <h1>Contacto</h1>
+    <a id = 'edit' href="#edit/contactoEdit/0" data-icon="plus">&nbsp;&nbsp;</a>
+</div>
+
 
 <div data-role="content">
     <div class="ui-grid-solo">
-    <ul data-role="listview" data-autodividers="true" data-filter="true" data-filter-placeholder="Buscar x Nombre" data-inset="true" >
-        <% _.each(employees, function(employee) { %>
-            <li >
-                <a href="#form/contacto/<%= employee.id %>"><%= employee.name %> </a>
-            </li>
-        <% }); %>
-    </ul>
+        <ul data-role="listview" data-autodividers="true" data-filter="true" data-filter-placeholder="Buscar x Nombre" data-inset="true" >
+            <% _.each(employees, function(employee) { %>
+                <li >
+                    <a href="#form/contacto/<%= employee.id %>"><img src="data:image/png;base64,<%= employee.image_small %>" alt="" /> <%= employee.name %> - <%= employee.child_ids %> - <%= employee.category_id %> </a>
+
+
+                </li>
+            <% }); %>
+        </ul>
     </div>
-</div><!-- /content -->
+</div>

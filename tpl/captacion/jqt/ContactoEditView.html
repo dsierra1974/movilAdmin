@@ -1,0 +1,132 @@
+
+<% if (employees.length > 0) { %>
+    <% _.each(employees, function(employee) { %>
+        <div data-role="header" >
+            <a href="#form/contacto/<%= employee.id %>" data-icon="arrow-l">&nbsp;&nbsp;</a>
+            <h1>Contacto</h1>
+            <a id = 'edit' href="#save/contacto/<%= employee.id %>" data-icon="edit">&nbsp;&nbsp;</a>
+        </div>
+        <div data-role="content" >
+            <br>
+            <form action="/#" method="post" id = "submitForm" name = "submitForm">
+                <table data-role="table"  >
+                    <thead>
+                        <tr>
+                            <th data-priority="1"></th>
+                            <th data-priority="2"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-width="10%" width="10%"><img src="data:image/png;base64,<%= employee.image_small %>" alt="" /></td>
+                            <td data-width="90%" width="90%">
+                                <label for="name" ><input type="text" name="name" id="name" value="<%=employee.name %>"  class = "validate[required] saveField"  ></label>
+                                <label for="title" ><input type="text" name="title" id="title" value="<%=employee.title%>" class = "validate[required] saveField" ></label>
+                                <label for="company" ><input type="text" name="company" id="company" value="<%=employee.name %>" class = "validate[required] saveField" ></label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a">
+                        <label for="phone">Tel:</label><input type="tel" name="phone" id="phone" value="<%= employee.phone %>" class = "saveField">
+                    </div>
+                    <div class="ui-block-a">
+                        <label for="email">Email:</label><input type="email" name="email" id="email" value="<%= employee.email %>" class = "saveField">
+                    </div>
+                    <div class="ui-block-a">
+                        <label for="mobile">Mobile:</label><input type="tel" name="mobile" id="mobile" value="<%= employee.mobile %>" class = "saveField">
+                    </div>
+                </div>
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div data-role="fieldcontain">
+                            <label for="title">Tipo:</label>
+                            <select name="title" id="title" class = "saveField">
+                                <option value="1">Propietario</option>
+                                <option value="9">Comprador</option>
+                                <option value="3">Candidato</option>
+                                <option value="4">Inquilino</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div data-role="fieldcontain">
+                            <label for="select-custom-2">Basic:</label>
+                            <select name="select-custom-2" id="select-custom-2">
+                                <option value="1">The 1st Option</option>
+                                <option value="2">The 2nd Option</option>
+                                <option value="3">The 3rd Option</option>
+                                <option value="4">The 4th Option</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    <% }); %>
+<% } else { %>
+    <div data-role="header" >
+        <a href="#return?jqt" data-icon="arrow-l">&nbsp;&nbsp;</a>
+        <h1>Contacto</h1>
+        <a id = 'edit' href="#save/contacto/0" data-icon="edit">&nbsp;&nbsp;</a>
+    </div>
+    <div data-role="content" class="jqm-content">
+        <br>
+        <table data-role="table"  >
+            <thead>
+            <tr>
+                <th data-priority="1"></th>
+                <th data-priority="2"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-width="10%" width="40%"></td>
+                <td data-width="90%" width="90%">
+                    <label for="name" ><input type="text" name="name" id="name" value="" class = "saveField"></label>
+                    <label for="title" ><input type="text" name="title" id="title" value="" ></label>
+                    <label for="company" ><input type="text" name="company" id="company" value="" ></label>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="ui-grid-solo">
+            <div class="ui-block-a">
+                <label for="phone">Tel:</label><input type="tel" name="phone" id="phone" value="" class = "saveField">
+            </div>
+            <div class="ui-block-a">
+                <label for="email">Email:</label><input type="email" name="email" id="email" value="" class = "saveField">
+            </div>
+            <div class="ui-block-a">
+                <label for="mobile">Mobile:</label><input type="tel" name="mobile" id="mobile" value="" class = "saveField">
+            </div>
+        </div>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <div data-role="fieldcontain">
+                    <label for="title">Tipo:</label>
+                    <select name="title" id="title" class = "saveField">
+                        <option value="1">Propietario</option>
+                        <option value="9">Comprador</option>
+                        <option value="3">Candidato</option>
+                        <option value="4">Inquilino</option>
+                    </select>
+                </div>
+            </div>
+            <div class="ui-block-b">
+                <div data-role="fieldcontain">
+                    <label for="select-custom-2">Basic:</label>
+                    <select name="select-custom-2" id="select-custom-2">
+                        <option value="1">The 1st Option</option>
+                        <option value="2">The 2nd Option</option>
+                        <option value="3">The 3rd Option</option>
+                        <option value="4">The 4th Option</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+<% }  %>

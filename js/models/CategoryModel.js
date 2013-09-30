@@ -8,18 +8,6 @@ define([ "jquery", "backbone" ], function( $, Backbone ) {
     var Model = Backbone.Model.extend( {
         urlRoot: "http://168.144.134.243:3000/erp/res.partner"
         //urlRoot: "http://localhost:3000/erp/res.partner"
-
-
-        //initialize: function () {
-            //this.reports = new CategoriesCollection( [] , { type: "animals" } ) ;
-            //this.reports.url = this.urlRoot + "/" + this.id + "/reports";
-            //this.reports.url = this.urlRoot + "/" + this.id ;
-            //this.reports.url = this.urlRoot ;
-
-            //this.reports = new Collection([] , { type: "colors" } );
-            //this.reports.url = this.urlRoot + "/" + this.id + "/reports";
-            //this.reports.url = this.urlRoot + "?query=id|=|5";
-        //}
     } );
 
     // Returns the Model class

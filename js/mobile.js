@@ -10,23 +10,22 @@ require.config( {
             "backbone": "libs/backbone",
             "jqueryMigrate": "jquery-migrate",
             "jqueryUI": "jquery-ui-min",
-            "fastClick": "libs/fastclick"
+            "fastClick": "libs/fastclick",
+            "validationEngine": "libs/validate/jquery.validationEngine",
+            "validationEngineEs" : "libs/validate/languages/jquery.validationEngine-es"
       },
 
       // Sets the configuration for your third party scripts that are not AMD compatible
       shim: {
-
             "backbone": {
                   "deps": [ "underscore", "jquery" ],
                   "exports": "Backbone"  //attaches "Backbone" to the window object
             }
-
       } // end Shim Configuration
-
 } );
 
 // Includes File Dependencies
-require([ "jquery", "backbone", "routers/mobileRouter" , "fastClick" ], function( $, Backbone, Mobile, FastClick) {
+require([ "jquery", "backbone", "routers/mobileRouter" , "fastClick" , "validationEngine", "validationEngineEs" ], function( $, Backbone, Mobile, FastClick, validationEngine, validationEngineES) {
 
     window.addEventListener('load', function () {
         new FastClick(document.body);
@@ -37,10 +36,8 @@ require([ "jquery", "backbone", "routers/mobileRouter" , "fastClick" ], function
 		function() {
 			// Prevents all anchor click handling including the addition of active button state and alternate link bluring.
 			$.mobile.linkBindingEnabled = false;
-
 			// Disabling this will prevent jQuery Mobile from handling hash changes
 			$.mobile.hashListeningEnabled = false;
-
 		}
 	)
 
@@ -48,20 +45,12 @@ require([ "jquery", "backbone", "routers/mobileRouter" , "fastClick" ], function
         $( ".menu-item").removeClass("selectMenu");
         $( "#" + this.id).addClass("selectMenu");
         $('.sidebar-left').animate({left: '-270'}, 1200, 'easeOutExpo', function () {});
-        //$('.sidebar-left').animate({left: '-245'}, 300, 'easeOutExpo', function () {});
-        //$('.sidebar-left').animate({left: '-270'}, 250, 'easeOutExpo', function () {});
-        //$('.sidebar-left').animate({left: '-255'}, 200, 'easeOutExpo', function () {});
-        //$('.sidebar-left').animate({left: '-270'}, 200, 'easeOutExpo', function () {});
-
         $('.sidebar-right').animate({right: '-280px'}, 200, 'easeInOutExpo', function () {});
-
     });
 
     //window.utils.loadTemplate(['JqtView' ],  function() {
         require( [ "jquerymobile" ], function() {
             // Instantiates a new Backbone.js Mobile Router
-
-
             this.router = new Mobile();
         });
     //});

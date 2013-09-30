@@ -2,8 +2,7 @@
     <div data-role="header" >
         <a href="#return?jqt" data-icon="arrow-l">&nbsp;&nbsp;</a>
         <h1>Contacto</h1>
-        <a id = 'edit' href="#edit/contacto/<%= employee.id %>" data-icon="edit">&nbsp;&nbsp;</a>
-
+        <a id = 'edit' href="#edit/contactoEdit/<%= employee.id %>" data-icon="edit">&nbsp;&nbsp;</a>
     </div>
     <div data-role="content" >
         <br>
@@ -15,19 +14,24 @@
                 </tr>
             </thead>
             <tbody>
-            <tr>
-                <td data-width="10%" width="40%" ><img src = "css/themes/default/images/icons-png/person.jpg" width="80%" height="95%"></td>
-                <td data-width="90%" width="90%" >
-
-                <label for="phone"><strong><%= employee.name %></strong></label>
-                <label for="phone"><%= employee.title %></label>
-                <label for="phone">Hopewell SYstem</label>
-                </td>
-            </tr>
-
+                <tr>
+                    <td data-width="10%" width="10%"><img src="data:image/png;base64,<%= employee.image_small %>" alt="" /></td>
+                    <td data-width="90%" width="90%">
+                        <label for="phone"><strong><%=employee.name %></strong></label>
+                        <label for="phone"><%=employee.title %></label>
+                        <label for="phone">Hopewell System</label>
+                    </td>
+                </tr>
             </tbody>
         </table>
-
+        <div data-role="controlgroup" data-type="horizontal" data-mini="false">
+            <a href="#" data-role="button" data-iconpos="notext" data-icon="plus" data-theme="b">Add</a>
+            <a href="#" data-role="button" data-iconpos="notext" data-icon="delete" data-theme="b">Delete</a>
+            <a href="#" data-role="button" data-iconpos="notext" data-icon="grid" data-theme="b">More</a>
+            <a href="#" data-role="button" data-iconpos="notext" data-icon="grid" data-theme="b">More</a>
+            <a href="#" data-role="button" data-iconpos="notext" data-icon="grid" data-theme="b">More</a>
+            <a href="#" data-role="button" data-iconpos="notext" data-icon="grid" data-theme="b">More</a>
+        </div>
 
         <div class="ui-grid-solo">
             <div class="ui-block-a"><a href="tel:<%= employee.phone %>" data-role="button" data-mini = "true"> <label for="phone" data-mini = "true" >Tel <strong><%= employee.phone %> </strong></label></a></div>
@@ -51,7 +55,7 @@
                         <li><a href="#">Outbox <span class="ui-li-count">0</span></a></li>
                         <li><a href="#">Citas  <span class="ui-li-count">2</span></a></li>
                         <li><a href="#">Tramites <span class="ui-li-count">10-12</span></a></li>
-                        <li><a href="#">Inmuebles <span class="ui-li-count">4</span></a></li>
+
                         <li><a href="#">Seguimientos <span class="ui-li-count">2</span></a></li>
                     </ul>
                 </div>
